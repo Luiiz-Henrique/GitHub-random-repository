@@ -1,14 +1,10 @@
 import './App.css';
-import HelloWord from './components/HelloWord';
-
-function teste () {
-  console.log("Dentro da Props");
-}
+import Card from './components/card/Card';
 
 function App() {
   return (
     <div className="App">
-      <HelloWord name="Luiz" event={teste}/>
+      <Card />
     </div>
   );
 }

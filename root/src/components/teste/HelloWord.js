@@ -1,5 +1,6 @@
 import style from './HelloWord.module.css';
 import { useState } from 'react';
+import Listas from './Listas';
 
 
 
@@ -10,6 +11,8 @@ function HelloWord({name, event}) { // passado como parâmetro "props", todos os
 
     const [email, setEmail] = useState('teste@');
     const [userEmail, setUserEmail] = useState();
+
+    const listaTeste = ["carro", "moto", "aviao", "bicicleta", "caminhao"];
 
     function login(e){
         e.preventDefault();
@@ -58,6 +61,8 @@ function HelloWord({name, event}) { // passado como parâmetro "props", todos os
                     <button onClick={limparEmail}> Limpar Email </button>
                 </div>
             )}
+
+            <Listas lista={listaTeste}/>
 
         </div>
     );

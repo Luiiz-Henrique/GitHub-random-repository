@@ -1,0 +1,22 @@
+.main_card {
+    width: 250px;
+    height: 450px;
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    border: 3.5px solid rgb(26, 7, 27);
+}
+
+.Card_Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card_Title h4{
+    padding: 0.4rem;
+}
+
+.Card_Title svg{
+    font-size: 2.5em;
+    color: rgb(26, 7, 27);
+}
