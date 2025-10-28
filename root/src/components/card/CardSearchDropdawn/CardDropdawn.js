@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react';
 import data from '../../../data/languages.json'
 import Select from 'react-select'
 
-function CardDropdawn() {
+function CardDropdawn({setLanguage}) {
 
     const customStyles = {
 
@@ -30,22 +29,12 @@ function CardDropdawn() {
 
     };
 
-    const [categories, setCategories] = useState([])
-
-    data.forEach((x, y) => {
-
-      const label = data[y].title
-      const value = data[y].title
-      setCategories({label: label, value: value})
-    })
-
-    console.log(categories)
-
-    const option = [{value:"sala", label:"sala"}]
-
     return (
         <Select
-          options={option}
+          options={data.map((x)=>(
+            {value: x.title, label: x.value}
+          ))}
+          onChange={(e) => setLanguage(e.value) }
           styles={customStyles}
         />
     )

@@ -3,17 +3,20 @@ import CardTitle from './CardTitle';
 import CardDropdawn from './CardSearchDropdawn/CardDropdawn';
 import CardRepositoryContent from './CardRepositoryContent/CardRepositoryContent';
 import CardButton from './CardButton';
+import { useState } from 'react';
 
 function Card() {
 
-return (
-    <div className={style.main_card}>
-        <CardTitle/>
-        <CardDropdawn/>
-        <CardRepositoryContent/>
-        <CardButton/>
-    </div>
-);
+    const [language, setLanguage] = useState([])
+
+    return (
+        <div className={style.main_card}>
+            <CardTitle/>
+            <CardDropdawn setLanguage={setLanguage}/>
+            <CardRepositoryContent language={language}/>
+            <CardButton/>
+        </div>
+    );
 
 }
 
