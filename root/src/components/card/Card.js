@@ -14,7 +14,7 @@ function Card() {
             <CardTitle/>
             <CardDropdawn setLanguage={setLanguage}/>
             <CardRepositoryContent language={language}/>
-            <CardButton/>
+            <CardButton show={language}/>
         </div>
     );
 

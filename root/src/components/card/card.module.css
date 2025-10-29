@@ -36,15 +36,14 @@
     border-radius: 7px;
 }
 
-/*.Card_Dropdawn input, input:focus{
-    background: none;
-    border: none;
-    outline: 0;
-    box-shadow: 0 0 0 0;
-}*/
+.Card_RepositoryContentEmpty{
+    background-color: rgb(207, 207, 207);
+    margin: 0 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
+    border-radius: 7px;
+}
 
-.Card_RepositoryContent {
-    height: 130px;
+.Card_RepositoryContent{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,18 +61,8 @@
 .Card_RepositoryContent p{
     margin: 0 0 10px 0;
     text-align: start;
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: gray;
-    overflow: auto;
-}
-
-.Card_RepositoryContent p::-webkit-scrollbar{
-    width: 2px;
-}
-
-.Card_RepositoryContent p::-webkit-scrollbar-thumb{
-    background-color: rgb(48, 48, 48);
-    border-radius: 10px;
 }
 
 .Card_RepositoryContent ul{
@@ -84,6 +73,12 @@
     justify-content: space-between;
     align-items: center;
     font-size: 0.7em;
+}
+
+.Card_RepositoryContent svg{
+    width: 1.1em;
+    margin-right: 3px;
+    color: rgb(46, 46, 46);
 }
 
 .Card_Button {

@@ -1,4 +1,4 @@
-import data from '../../../data/languages.json'
+import data from '../../data/languages.json'
 import Select from 'react-select'
 
 function CardDropdawn({setLanguage}) {
@@ -31,6 +31,7 @@ function CardDropdawn({setLanguage}) {
 
     return (
         <Select
+          label='Selecionar Linguagem'
           options={data.map((x)=>(
             {value: x.title, label: x.value}
           ))}
